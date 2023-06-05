@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}

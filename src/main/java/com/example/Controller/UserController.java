@@ -75,6 +75,8 @@ public class UserController {
    */
   @GetMapping("/user/{id}")
   public String displayView(@PathVariable Long id, Model model) {
+	  UserEntity user = userService.findById(id);
+	    model.addAttribute("userData", user);
     return "user/view";
   }
 }

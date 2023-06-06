@@ -42,4 +42,12 @@ public class UserService {
     public List<UserEntity> searchAll() {
       return userRepository.findAll();
     }
+    
+    /**
+     * ユーザー情報 主キー検索
+     * @return 検索結果
+     */
+    public UserEntity findById(Long id) {
+      return userRepository.findById(id).get();
+    }
 }
